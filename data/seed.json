@@ -1,0 +1,23 @@
+[
+  {
+    "fecha": "2025-09-01",
+    "tipo": "ingreso",
+    "categoria": "Sueldo",
+    "descripcion": "Pago mensual",
+    "monto": "2500"
+  },
+  {
+    "fecha": "2025-09-03",
+    "tipo": "gasto",
+    "categoria": "Comida",
+    "descripcion": "Supermercado",
+    "monto": "180.50"
+  },
+  {
+    "fecha": "2025-09-05",
+    "tipo": "gasto",
+    "categoria": "Transporte",
+    "descripcion": "Combustible",
+    "monto": "120.00"
+  }
+]

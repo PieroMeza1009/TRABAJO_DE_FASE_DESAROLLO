@@ -1,0 +1,13 @@
+{
+  "name": "spa-finanzas",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "sass": "sass --no-source-map assets/scss/styles.scss assets/css/styles.css",
+    "sass:watch": "sass --watch assets/scss/styles.scss:assets/css/styles.css --no-source-map",
+    "dev": "npm run sass:watch"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
+}

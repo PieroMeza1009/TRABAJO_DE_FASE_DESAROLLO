@@ -1,0 +1,19 @@
+// Mixins SASS
+@mixin card {
+  background: #fff;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  padding: 1rem;
+}
+
+@mixin clamp($lines: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin button-like {
+  border-radius: .75rem;
+  padding: .5rem 1rem;
+}

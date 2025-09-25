@@ -1,0 +1,26 @@
+/* Compilado de SASS (versión inicial) */
+:root { color-scheme: light; }
+body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: #1f2937; background: #f7f9fb; }
+.site-header, .site-footer { background: #fff; }
+main#app { display: grid; gap: 1rem; }
+.navbar-brand { letter-spacing: .3px; }
+.cardy, .kpi, .table-wrap, .form-section {
+  background: #fff; border-radius: 1rem; box-shadow: 0 10px 20px rgba(0,0,0,.08); padding: 1rem;
+}
+.kpi { display: grid; gap: .25rem; }
+.kpi .kpi-value { font-size: clamp(1.5rem, 5vw, 2rem); font-weight: 800; }
+.kpi .kpi-label { color: #6b7280; }
+.table-wrap { overflow: auto; }
+.actions { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+.btn-soft { border-radius: .75rem; padding: .5rem 1rem; background: rgba(13,110,253,.08); color: #0d6efd; border: 1px solid rgba(13,110,253,.15); }
+.btn-soft:hover { background: rgba(13,110,253,.12); }
+.form-section h2 { font-size: 1.1rem; margin-bottom: .75rem; }
+.form-section .form-text { color: #6b7280; }
+.badge-income { background: rgba(25,135,84,.12); color: #198754; }
+.badge-expense { background: rgba(220,53,69,.12); color: #dc3545; }
+.grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+.flex-center { display: flex; align-items: center; justify-content: center; }
+.table th, .table td { vertical-align: middle; }
+@media (min-width: 768px) {
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+}

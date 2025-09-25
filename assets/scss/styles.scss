@@ -1,0 +1,60 @@
+@use "variables";
+@use "mixins";
+@use "layout";
+@use "components";
+
+// Atajos para usar variables/mixins
+$primary: variables.$primary;
+$bg: variables.$bg;
+$text: variables.$text;
+$muted: variables.$muted;
+$success: variables.$success;
+$danger: variables.$danger;
+$warning: variables.$warning;
+$shadow: variables.$shadow;
+$radius: variables.$radius;
+$radius-lg: variables.$radius-lg;
+
+@mixin card { @include mixins.card; }
+@mixin clamp($lines: 2) { @include mixins.clamp($lines); }
+@mixin button-like { @include mixins.button-like; }
+
+// Layout
+.site-header { @extend layout.site-header; }
+.site-footer { @extend layout.site-footer; }
+main#app { @extend layout.main; } // extender las reglas de layout
+
+// Componentes
+.cardy { @extend components.cardy; }
+.kpi { @extend components.kpi; }
+.table-wrap { @extend components.table-wrap; }
+.actions { @extend components.actions; }
+.btn-soft { @extend components.btn-soft; }
+.form-section { @extend components.form-section; }
+.badge-income { @extend components.badge-income; }
+.badge-expense { @extend components.badge-expense; }
+
+// Reglas adicionales (flex/grid para tarjetas y contenido)
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}

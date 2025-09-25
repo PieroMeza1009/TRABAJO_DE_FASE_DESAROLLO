@@ -1,0 +1,13 @@
+// Layout principal con CSS Grid
+.site-header {
+  background: #fff;
+}
+
+.site-footer {
+  background: #fff;
+}
+
+main#app {
+  display: grid;
+  gap: 1rem;
+}
