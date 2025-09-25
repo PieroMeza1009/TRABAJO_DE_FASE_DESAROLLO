@@ -1,71 +1,44 @@
-# FinanzasOne — SPA (Vanilla JS + SASS + Bootstrap 5)
+# FinanzasOne — Gestor de Finanzas Personales (SPA)
 
-Aplicación web de finanzas personales que cumple los requisitos del proyecto: SPA, HTML5 semántico, CSS responsivo con Grid/Flexbox, SASS (variables, anidación, mixin), Bootstrap 5, formulario con 5+ campos y validaciones, manipulación dinámica del DOM y tabla de datos.
+Aplicación web interactiva desarrollada como parte del proyecto **Fase 1**, que permite registrar, visualizar y gestionar ingresos y gastos. Construida como una **Single Page Application (SPA)** con tecnologías modernas del front-end.
 
-## Requisitos previos
-- **Node.js** y **npm**
-- Editor (VS Code recomendado)
-- Extensión **Live Server** (opcional) o servidor estático
+---
 
-## Estructura
-```
-/assets
-  /css          ← CSS compilado
-  /scss         ← SASS fuente (variables, mixins, layout, components)
-/data           ← datos de ejemplo
-/js
-  /views        ← vistas de la SPA
-  main.js
-  router.js
-index.html
-package.json
-README.md
-```
+##  Integrantes
+- Meza Soto Piero Esteban 
+- Regy Williams Sarmiento Ccari  
+- Ferro Huanchi Alvaro Jeanpiero  
+- For Vilca Guillermo Aaron Kenan  
+ 
 
-## Scripts
-Instalar dependencias y compilar SASS:
-```bash
-npm i -D sass
-npm run sass      # compilado único
-npm run dev       # ver cambios en tiempo real (watch)
-```
+---
 
-Scripts definidos en `package.json`:
-```json
-{
-  "scripts": {
-    "sass": "sass --no-source-map assets/scss/styles.scss assets/css/styles.css",
-    "sass:watch": "sass --watch assets/scss/styles.scss:assets/css/styles.css --no-source-map",
-    "dev": "npm run sass:watch"
-  }
-}
-```
+## Descripción del Proyecto
+El sistema **FinanzasOne** tiene como objetivo ofrecer a los usuarios una plataforma sencilla y responsiva para el **control de finanzas personales**.  
+La aplicación permite:
+- Registrar transacciones con **5+ campos** (`fecha`, `tipo`, `categoría`, `descripción`, `monto`).  
+- Validar datos antes de guardarlos.  
+- Visualizar la información en una **tabla dinámica** con opciones de edición y eliminación.  
+- Mostrar indicadores clave (ingresos, gastos, balance) en el **dashboard**.  
+- Filtrar transacciones por descripción o categoría.  
+- Guardar la información en el **localStorage**, asegurando persistencia aunque se recargue la página.  
 
-## Cómo ejecutar en local
-1. Abre el proyecto en VS Code.
-2. Ejecuta `npm i -D sass` y luego `npm run dev` para vigilar SASS.
-3. Abre `index.html` con Live Server o tu navegador.
+---
 
-## Despliegue
-### GitHub Pages
-1. Crea un repo y sube el código.
-2. En **Settings → Pages**, selecciona la rama `main` y carpeta `/root`.
-3. La URL pública se generará automáticamente.
+## Tecnologías Utilizadas
+- **HTML5 semántico** (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`, `<form>`, `<table>`)  
+- **CSS3 + Responsive Design** con **Flexbox** y **CSS Grid** (20+ reglas personalizadas)  
+- **SASS** (variables, anidación, mixins)  
+- **Bootstrap 5** (botones, modal, utilidades de grid)  
+- **JavaScript (Vanilla)**: validaciones, eventos, DOM dinámico, persistencia con `localStorage`  
+- **GitHub Pages** para despliegue  
 
-### Netlify / Vercel
-- Conecta tu repo y despliega como sitio estático (no requiere build).
+---
 
-## Cumplimiento del enunciado
-- **HTML5 semántico**: header/nav/main/section/footer + formulario y tabla.
-- **CSS3 Responsivo**: 20+ reglas personalizadas, Flexbox (cards/acciones) y Grid (layout y cards).
-- **SASS**: variables, anidación y mixin (`_variables.scss`, `_mixins.scss`, etc.).
-- **Bootstrap 5**: botones, modales y utilidades incluidas por CDN.
-- **JavaScript**: captura/validación de formulario, eventos, DOM dinámico, SPA con hash router y persistencia en `localStorage`.
+## Deploy Público
+https://pieromeza1009.github.io/TRABAJO_DE_FASE_DESAROLLO/
 
-## Trabajo en equipo (3–4 integrantes sugerido)
-- **Front UI/Accesibilidad**: maquetación semántica, Grid/Flex, componentes Bootstrap.
-- **Lógica JS/Validaciones**: router, form, tabla, filtros, edición.
-- **Estilos SASS**: variables, mixins, tema, responsive; integra Bootstrap donde convenga.
-- **DevOps/Entrega**: Git/GitHub, README, deployment (Pages/Netlify), QA.
 
-¡Éxitos!
+---
+
+##  Estructura del Proyecto
